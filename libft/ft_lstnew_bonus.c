@@ -1,33 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: deordone <deordone@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/07 17:37:39 by deordone          #+#    #+#             */
-/*   Updated: 2023/11/09 13:05:02 by deordone         ###   ########.fr       */
+/*   Created: 2023/09/27 15:25:26 by deordone          #+#    #+#             */
+/*   Updated: 2023/10/07 14:08:56 by deordone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-void	*ft_memset(void *str, int c, size_t len)
+t_list	*ft_lstnew(void *content)
 {
-	int		i;
-	char	*s;
+	t_list	*nodo;
 
-	i = 0;
-	s = (char *)str;
-	while (i < (int) len)
-		s[i++] = c;
-	return ((char *)str);
+	nodo = (t_list *)malloc(sizeof(*nodo));
+	if (!nodo)
+		return (NULL);
+	nodo->content = content;
+	nodo->next = NULL;
+	return (nodo);
 }
-/*
-int	main(void)
-{
-	char str3[] = "hola";
-
-	ft_memset(str3, 'a', 2);
-	return (0);
-}*/

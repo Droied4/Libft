@@ -6,9 +6,11 @@
 /*   By: deordone <deordone@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 12:30:24 by deordone          #+#    #+#             */
-/*   Updated: 2023/09/16 17:49:46 by deordone         ###   ########.fr       */
+/*   Updated: 2023/10/07 13:24:30 by deordone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

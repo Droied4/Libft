@@ -6,7 +6,7 @@
 /*   By: deordone <deordone@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 12:44:40 by deordone          #+#    #+#             */
-/*   Updated: 2023/09/16 17:29:00 by deordone         ###   ########.fr       */
+/*   Updated: 2023/11/09 13:28:58 by deordone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,11 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	str1 = (unsigned char *)s1;
 	str2 = (unsigned char *)s2;
-	i = 0;
-	while (i < n)
+	i = -1;
+	while (++i < n)
 	{
 		if (str1[i] != str2[i])
 			return (str1[i] - str2[i]);
-		i++;
 	}
 	return (0);
 }

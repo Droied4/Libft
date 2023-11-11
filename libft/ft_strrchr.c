@@ -6,12 +6,12 @@
 /*   By: deordone <deordone@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 11:32:32 by deordone          #+#    #+#             */
-/*   Updated: 2023/09/16 19:03:01 by deordone         ###   ########.fr       */
+/*   Updated: 2023/11/09 13:17:53 by deordone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
+#include <string.h>
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -24,7 +24,7 @@ char	*ft_strrchr(const char *s, int c)
 	{
 		if (s[i] == (char)c)
 			return ((char *)(s + i));
-		i--;
+		--i;
 	}
 	return (NULL);
 }

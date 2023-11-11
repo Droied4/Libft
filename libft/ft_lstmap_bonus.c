@@ -1,33 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: deordone <deordone@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/07 17:37:39 by deordone          #+#    #+#             */
-/*   Updated: 2023/11/09 13:05:02 by deordone         ###   ########.fr       */
+/*   Created: 2023/10/02 21:36:53 by deordone          #+#    #+#             */
+/*   Updated: 2023/10/07 12:37:09 by deordone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-void	*ft_memset(void *str, int c, size_t len)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	int		i;
-	char	*s;
+	t_list	*newnode;
+	t_list	*node;
+	void	*ptrf;
 
-	i = 0;
-	s = (char *)str;
-	while (i < (int) len)
-		s[i++] = c;
-	return ((char *)str);
+	node = 0;
+	while (lst)
+	{
+		ptrf = f(lst->content);
+		newnode = ft_lstnew(ptrf);
+		if (!newnode)
+		{
+			free(ptrf);
+			ft_lstclear(&node, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&node, newnode);
+		lst = lst->next;
+	}
+	return (node);
 }
-/*
-int	main(void)
-{
-	char str3[] = "hola";
-
-	ft_memset(str3, 'a', 2);
-	return (0);
-}*/

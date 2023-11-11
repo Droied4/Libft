@@ -6,7 +6,7 @@
 /*   By: deordone <deordone@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 11:07:28 by deordone          #+#    #+#             */
-/*   Updated: 2023/09/16 11:54:30 by deordone         ###   ########.fr       */
+/*   Updated: 2023/11/09 13:09:08 by deordone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,21 +18,16 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	if (!dst && !src)
 		return (NULL);
-	i = 0;
+	i = -1;
 	if (dst > src)
 	{
 		while (len-- > 0)
-		{
 			((unsigned char *)dst)[len] = ((unsigned char *)src)[len];
-		}
 	}
 	else
 	{
-		while (i < len)
-		{
+		while (++i < len)
 			((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
-			i++;
-		}
 	}
 	return (dst);
 }

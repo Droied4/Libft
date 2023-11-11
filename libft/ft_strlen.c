@@ -6,7 +6,7 @@
 /*   By: deordone <deordone@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 17:28:43 by deordone          #+#    #+#             */
-/*   Updated: 2023/09/08 19:20:17 by deordone         ###   ########.fr       */
+/*   Updated: 2023/11/09 13:03:53 by deordone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t	i;
 
 	i = 0;
-	while (*s != '\0')
-	{
-		s++;
+	while (s[i] != '\0')
 		i++;
-	}
 	return (i);
 }
