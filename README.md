@@ -1,6 +1,6 @@
 # Libft 
 
-In this project, i'll be creating a library of functions.
+In this project, i'll be recreating a library of functions.
 
 
 
