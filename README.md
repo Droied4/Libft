@@ -60,3 +60,27 @@ In this project, i'll be recreating a library of functions.
 - [`ft_lstclear`](libft/ft_lstclear.c)	- deletes and free list.
 - [`ft_lstiter`](libft/ft_lstiter.c)	- applies a function to each element of a list.
 - [`ft_lstmap`](libft/ft_lstmap.c)	- applies a function to each element of a list.
+
+## Instructions
+
+### 1. Compiling the archives
+
+To compile the proiect, go to its path and run:
+
+For __mandatory__ functions:
+```
+$ make
+```
+### 2. Cleaning all binary (.o) and executable files (.a)
+
+To delete all files generated with make, go to the path and run:
+```
+$ make fclean
+```
+
+### 3. Using it in your code
+
+To use this project in your code, simply include this header:
+```
+#include "libft.h"
+```
