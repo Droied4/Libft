@@ -6,7 +6,7 @@
 /*   By: deordone <deordone@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 11:21:57 by deordone          #+#    #+#             */
-/*   Updated: 2023/09/23 14:40:51 by deordone         ###   ########.fr       */
+/*   Updated: 2024/01/06 22:53:54 by carmeno          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	unsigned int	i;
-
-	i = 0;
 	while (*s != (char)c)
 	{
 		if (*s == '\0')
