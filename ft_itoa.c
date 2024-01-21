@@ -6,14 +6,13 @@
 /*   By: deordone <deordone@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 11:50:03 by deordone          #+#    #+#             */
-/*   Updated: 2024/01/06 22:54:58 by carmeno          ###   ########.fr       */
+/*   Updated: 2024/01/21 13:42:26 by deordone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
-size_t	howmdigits(int n)
+static size_t	howmdigits(int n)
 {
 	size_t	i;
 
@@ -28,7 +27,7 @@ size_t	howmdigits(int n)
 	return (i - 1);
 }
 
-char	*isnegative(char *str_num, int n, int digits)
+static char	*isnegative(char *str_num, int n, int digits)
 {
 	if (n < 0)
 	{
@@ -46,7 +45,7 @@ char	*isnegative(char *str_num, int n, int digits)
 	return (str_num);
 }
 
-char	*loop(char *str_num, int n, size_t digits, int nkeep)
+static char	*loop(char *str_num, int n, size_t digits, int nkeep)
 {
 	while (digits)
 	{

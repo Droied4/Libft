@@ -6,7 +6,7 @@
 /*   By: deordone <deordone@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 16:04:41 by deordone          #+#    #+#             */
-/*   Updated: 2023/10/13 16:41:45 by deordone         ###   ########.fr       */
+/*   Updated: 2024/01/21 13:42:40 by deordone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+# include <stdio.h>
 # include <unistd.h>
 
 typedef struct s_list
