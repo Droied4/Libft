@@ -6,7 +6,7 @@
 /*   By: deordone <deordone@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 17:50:02 by deordone          #+#    #+#             */
-/*   Updated: 2024/01/21 13:41:43 by deordone         ###   ########.fr       */
+/*   Updated: 2024/01/21 14:26:26 by deordone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static int	ft_howmwords(const char *s, char c)
 	return (word);
 }
 
-static void	ft_free_array(char **res, int i)
+static void	ft_lfree_array(char **res, int i)
 {
 	while (i--)
 	{
@@ -62,7 +62,7 @@ static char	**ft_create(char const *s, char c, char **res)
 			res[j] = ft_substr(s, start, i - start + 1);
 			if (!res[j])
 			{
-				ft_free_array(res, j);
+				ft_lfree_array(res, j);
 				return (0);
 			}
 			j++;
