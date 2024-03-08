@@ -93,7 +93,7 @@ To use this project in your code, simply include this header:
 ### ➡️ [Linkedin Profile](https://www.linkedin.com/in/droied/) ⬅️
 ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)
 ### ➡️ [Intra Profile](https://profile.intra.42.fr/users/deordone) ⬅️
-[![deordone 42 stats](https://badge.mediaplus.ma/honeytones/deordone)](https://github.com/oakoudad/badge42)
+[![deordone 42 stats](https://badge.mediaplus.ma/DarkBlue/deordone)](https://github.com/oakoudad/badge42)
 ### ⬇️ [_Developed in_](nothing) ⬇️
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) 
 ### ⬇️ [_Version Control_](nothing) ⬇️
