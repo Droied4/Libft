@@ -1,6 +1,6 @@
 # Libft - Library of functions in C
 
-![Libft - Deordone](https://github.com/Droied4/Libft/assets/69441843/bff74988-5c52-4c42-9d8f-5a86921f777e)
+![42BCN - Deordone](https://github.com/Droied4/Libft/assets/69441843/a824ed3f-e896-47f1-9b1c-b1f7b36a9ff1)
 
 ## Description
 Libft is an individual project in 42 that makes us recreate standard C library functions for future projects and have a deeper understanding about basic data structures and algorithms.
