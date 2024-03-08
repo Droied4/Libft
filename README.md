@@ -1,10 +1,35 @@
-# Libft 
+# Libft - Library of functions in C
 
-In this project, i'll be recreating a library of functions.
+![Libft - Deordone](https://github.com/Droied4/Libft/assets/69441843/bff74988-5c52-4c42-9d8f-5a86921f777e)
 
+## Description
+Libft is an individual project in 42 that makes us recreate standard C library functions for future projects and have a deeper understanding about basic data structures and algorithms.
 
+## Instructions
 
-# Libft Functions
+### 1. Compiling the archives
+
+To compile the proiect, go to its path and run:
+
+For __mandatory__ functions:
+```
+$ make
+```
+### 2. Cleaning all binary (.o) and executable files (.a)
+
+To delete all files generated with make, go to the path and run:
+```
+$ make fclean
+```
+
+### 3. Using it in your code
+
+To use this project in your code, simply include this header:
+```
+#include "libft.h"
+```
+
+# Functions
 
 ### Functions from `<ctype.h>`
 
@@ -52,35 +77,26 @@ In this project, i'll be recreating a library of functions.
 
 ### Linked list functions
 
-- [`ft_lstnew`](ft_lstnew.c)	- creates a new list element.
-- [`ft_lstadd_front`](ft_lstadd_front.c)	- adds an element at the beginning of a list.
-- [`ft_lstsize`](ft_lstsize.c)	- counts the number of elements in a list.
-- [`ft_lstlast`](ft_lstlast.c)	- returns the last element of the list.
-- [`ft_lstadd_back`](ft_lstadd_back.c)	- adds an element at the end of a list.
-- [`ft_lstclear`](ft_lstclear.c)	- deletes and free list.
-- [`ft_lstiter`](ft_lstiter.c)	- applies a function to each element of a list.
-- [`ft_lstmap`](ft_lstmap.c)	- applies a function to each element of a list.
+- [`ft_lstnew`](ft_lstnew_bonus.c)	- creates a new list element.
+- [`ft_lstadd_front`](ft_lstadd_front_bonus.c)	- adds an element at the beginning of a list.
+- [`ft_lstsize`](ft_lstsize_bonus.c)	- counts the number of elements in a list.
+- [`ft_lstlast`](ft_lstlast_bonus.c)	- returns the last element of the list.
+- [`ft_lstadd_back`](ft_lstadd_back_bonus.c)	- adds an element at the end of a list.
+- [`ft_lstclear`](ft_lstclear_bonus.c)	- deletes and free list.
+- [`ft_lstiter`](ft_lstiter_bonus.c)	- applies a function to each element of a list.
+- [`ft_lstmap`](ft_lstmap_bonus.c)	- applies a function to each element of a list.
 
-## Instructions
+## Info +
 
-### 1. Compiling the archives
+### About me
 
-To compile the proiect, go to its path and run:
-
-For __mandatory__ functions:
-```
-$ make
-```
-### 2. Cleaning all binary (.o) and executable files (.a)
-
-To delete all files generated with make, go to the path and run:
-```
-$ make fclean
-```
-
-### 3. Using it in your code
-
-To use this project in your code, simply include this header:
-```
-#include "libft.h"
-```
+### ➡️ [Linkedin Profile](https://www.linkedin.com/in/droied/) ⬅️
+![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)
+### ➡️ [Intra Profile](https://profile.intra.42.fr/users/deordone) ⬅️
+[![deordone 42 stats](https://badge.mediaplus.ma/honeytones/deordone)](https://github.com/oakoudad/badge42)
+### ⬇️ [_Developed in_](nothing) ⬇️
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) 
+### ⬇️ [_Version Control_](nothing) ⬇️
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+### ⬇️ [_Status_](nothing) ⬇️
+[![archive](https://github.com/GIScience/badges/raw/master/status/archive.svg)](https://github.com/GIScience/badges#archive)
