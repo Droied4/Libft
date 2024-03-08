@@ -88,8 +88,6 @@ To use this project in your code, simply include this header:
 
 ## Info +
 
-### About me
-
 ### ➡️ [Linkedin Profile](https://www.linkedin.com/in/droied/) ⬅️
 ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)
 ### ➡️ [Intra Profile](https://profile.intra.42.fr/users/deordone) ⬅️
